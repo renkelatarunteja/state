@@ -83,7 +83,9 @@ function LocationSelector() {
       </select>
       <div>
         {(selectedCity && selectedState && selectedCountry) && (
-          <p>You Selected {selectedCity}, {selectedState}, {selectedCountry}</p>
+          <p style={{ fontWeight: 'bold', color: 'black' }}>
+            You selected <span style={{ fontSize: '20px' }}>{selectedCity}</span>, {selectedState}, {selectedCountry}
+          </p>
         )}
       </div>
     </div>
@@ -91,3 +93,4 @@ function LocationSelector() {
 }
 
 export default LocationSelector;
+
